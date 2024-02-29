@@ -1,14 +1,15 @@
-import { useState } from 'react'
-
-import './App.css'
+import Button from "@mui/material/Button";
+import "./App.css";
+import Navbar from "./Navbar";
 
 function App() {
-  
   return (
     <>
-    Welcome
+      <Navbar />
+      <div>Welcome</div>
+      <Button variant="contained">Hello world</Button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
