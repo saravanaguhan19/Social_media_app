@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import PostCardList from "../PostCardList/PostCardList";
 import UserList from "../UserList/UserList";
 
-export default function RowAndColumnSpacing() {
+export default function MainContainer() {
   return (
     <Box container justifyContent={"space-around"} sx={{ mt: "4rem" }}>
       <Grid
