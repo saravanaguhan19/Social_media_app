@@ -8,19 +8,15 @@ import UserList from "../UserList/UserList";
 
 export default function RowAndColumnSpacing() {
   return (
-    <Box
-      display={"flex"}
-      justifyContent={"space-around"}
-      sx={{ width: "100%", mt: "4rem" }}
-    >
+    <Box container justifyContent={"space-around"} sx={{ mt: "4rem" }}>
       <Grid
         container
-        alignItems={"start"}
-        justifyContent={"center"}
+        alignItems="start"
+        justifyContent="center"
         rowSpacing={1}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
       >
-        <Grid md={6}>
+        <Grid>
           {/* Users */}
           <UserList />
         </Grid>
@@ -29,7 +25,7 @@ export default function RowAndColumnSpacing() {
           alignItems={"center"}
           justifyContent={"center"}
           direction={"column"}
-          md={6}
+          md={8}
         >
           {/* Posts */}
           <PostCardList />
