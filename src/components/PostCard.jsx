@@ -33,14 +33,14 @@ export default function PostCard({ authorFirstName, image, content }) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton
+          aria-label="add to favorites"
+          onClick={() => setIsLiked(!isLiked)}
+        >
           {isLiked ? (
-            <FavoriteIcon
-              sx={{ color: red[500] }}
-              onClick={() => setIsLiked(!isLiked)}
-            />
+            <FavoriteIcon sx={{ color: red[500] }} />
           ) : (
-            <FavoriteBorderIcon onClick={() => setIsLiked(!isLiked)} />
+            <FavoriteBorderIcon />
           )}
         </IconButton>
       </CardActions>
