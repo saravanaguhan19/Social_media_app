@@ -47,4 +47,4 @@ function PostCard({ authorFirstName, image, content }) {
   );
 }
 
-export default React.memo(PostCard);
+export default memo(PostCard);
