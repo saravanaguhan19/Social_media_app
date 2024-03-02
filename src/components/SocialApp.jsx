@@ -24,7 +24,7 @@ function SocialApp() {
   return (
     <div>
       <PostCardContext.Provider value={{ posts, setPosts }}>
-        <Navbar />
+        
         <Input />
         <MainContainer />
       </PostCardContext.Provider>
